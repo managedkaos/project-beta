@@ -1,0 +1,13 @@
+name: 'default'
+
+on: [push, workflow_dispatch]
+
+jobs:
+  main:
+    name: Call the awesome workflow
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo
+      uses: managedkaos/awesome-workflow/echo.yml
+      with:
+        username: ${{ inputs.project_name }}

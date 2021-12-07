@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Echo
-      uses: managedkaos/awesome-workflow/echo.yml
+      uses: managedkaos/awesome-workflow/echo.yml@main
       with:
         username: ${{ inputs.project_name }}

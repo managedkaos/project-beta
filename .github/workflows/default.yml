@@ -4,10 +4,6 @@ on: [push, workflow_dispatch]
 
 jobs:
   main:
-    name: Call the awesome workflow
-    runs-on: ubuntu-latest
-    steps:
-    - name: Echo
-      uses: managedkaos/awesome-workflow/.github/workflows/echo.yml@main
-      with:
-        username: ${{ inputs.project_name }}
+    uses: managedkaos/awesome-workflow/.github/workflows/echo.yml@main
+    with:
+      project_name: Project Beta
